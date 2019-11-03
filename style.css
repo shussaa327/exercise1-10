@@ -45,3 +45,27 @@ main{
 .title{
 	margin: 15px 0 5px;
 }
+
+@media screen and (max-width: 768px){
+	main{
+		width: 90%;
+	}
+
+	.guide{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.guide:nth-child(2){
+		margin: 20px auto;
+	}
+
+	.guide:last-child{
+		margin: 0 auto;
+}
+
+	.guide-image{
+		width: 100%;
+	}
+}
