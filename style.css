@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main{
+	width: 960px;
+	margin: 50px auto;
+}
+
+.guide{
+	width: 300px;
+	margin-right: 30px;
+	border: 1px solid #f7f7f7;
+	padding: 10px;
+	float: left;
+	position: relative;
+}
+/*:nth-child(3)から変更。last-childの方が適切*/
+.guide:last-child{
+	margin-right: 0;
+}
+/*画像の縦横比率が変わってしまった為、autoで自動で設定できる*/
+.guide-image{
+	width: 280px;
+	height: auto;
+}
+
+.step-number{
+	background-color: orange;
+	color: white;
+	padding: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.title{
+	margin: 15px 0 5px;
+}
