@@ -23,20 +23,17 @@ main{
 	float: left;
 	position: relative;
 }
-/*:nth-child(3)から変更。last-childの方が適切*/
+
 .guide:last-child{
 	margin-right: 0;
 }
-/*画像の縦横比率が変わってしまった為、autoで自動で設定できる*/
+
 .guide-image{
 	width: 280px;
 	height: auto;
 }
 
 .step-number{
-	width: 15%;
-	font-size: 90%;
-	text-align: center;
 	background-color: orange;
 	color: white;
 	padding: 3px;
@@ -51,22 +48,18 @@ main{
 
 @media screen and (max-width: 768px){
 	main{
-		width: 90%;
+		width: 100%;
 	}
 
 	.guide{
 		width: 90%;
-		margin: 0 auto;
+		margin: 0 auto 20px auto;
 		float: none;
-	}
-
-	.guide:nth-child(2){
-		margin: 20px auto;
 	}
 
 	.guide:last-child{
 		margin: 0 auto;
-}
+	}
 
 	.guide-image{
 		width: 100%;
